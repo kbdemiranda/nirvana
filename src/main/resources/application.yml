@@ -14,3 +14,7 @@ spring:
       hibernate:
         default_schema: nirvana
         format_sql: true
+
+server:
+  servlet:
+    context-path: /api
