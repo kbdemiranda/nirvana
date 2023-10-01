@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Nirvana
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: ${DBUSERNAME:postgres}
+    password: ${DBPASSWORD:postgres}
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/dev}
+  flyway:
+    default-schema: nirvana
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        default_schema: nirvana
+        format_sql: true
